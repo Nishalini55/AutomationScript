@@ -7,11 +7,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import com.github.dockerjava.api.model.Driver;
+
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class loginandsignup {
+
+	public class  Login extends lanuch
+   {
 @Test
 (dependsOnMethods= {"Launching _the_browser"})
 public void SignUp_for_Mobile() throws InterruptedException
@@ -47,6 +50,7 @@ public void SignUp_for_Mobile() throws InterruptedException
 	Password.sendKeys("Nisha@1999");
 	driver.findElement(By.xpath("//a[text()='Log In'])")).click();
 }
+   }
 }
 
 
