@@ -22,7 +22,9 @@ public void SignUp_for_Mobile() throws InterruptedException
 	password.sendKeys("Nisha@1999");
 	WebElement Phone_number = driver.findElement(By.xpath("//input[@type='Password"));
 	Phone_number.sendKeys("9789454701");
-	driver.findElement
+	driver.findElement(By.xpath("//input[@type= 'radio']")).click();
+	driver.findElement(By.xpath("//button[@type='date']")).click();
+	Alert Al = driver.switchTo()
 	
 	
 	
