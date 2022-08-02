@@ -1,6 +1,7 @@
 package mobileworld;
 
 import java.util.Iterator;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -40,7 +41,7 @@ public class searchandorder {
 		String childId = it.next();
 		driver.switchTo().window(childId);
 		Assert.assertTrue(driver.findElement(By.tagName("h2")).isDisplayed());
-		driver.findElement(By.id("inputFirstName")).sendkeys("nisha");
+		driver.findElement(By.id("inputFirstName")).sendKeys("nisha");
 		driver.findElement(By.xpath("//[@id='inputFirstName'][2]")).sendKeys("mathavan");
 		driver.findElement(By.id("inputEmail")).sendKeys("nisha@gmail.com");
 		driver.findElement(By.id("inputPassword")).sendKeys("Nisha@123");
