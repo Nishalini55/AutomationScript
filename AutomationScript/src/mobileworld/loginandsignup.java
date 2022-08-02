@@ -16,12 +16,14 @@ public class loginandsignup {
 	public class  Login extends lanuch
    {
 @Test
-(dependsOnMethods= {"Launching _the_browser"})
 public void SignUp_for_Mobile() throws InterruptedException
 {
 	WebDriverManager.chromedriver().setup();
 	WebDriver driver = new ChromeDriver();
-	WebElement Signin = driver.findElement(By.xpath("/button[text()='SIGN IN']"));
+	driver.get("https://mobileworld.azurewebsites.net/");
+	driver.manage().window().maximize();
+			
+    WebElement Signin = driver.findElement(By.xpath("//button[text()='SIGN IN']"));
 	Signin.click();
 	WebElement Signup = driver.findElement(By.xpath("a[text()='Sign up']"));
 	Signup.click();
