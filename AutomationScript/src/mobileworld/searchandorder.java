@@ -16,8 +16,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class searchandorder {
 	public class Search extends Launch
-	WebDriverManager.chromedriver().setup();
-	WebDriver driver = new ChromeDriver();
+	//System.setProperty("webdriver.chrome.driver",".C:\\Users\\nishalini.mathavan\\Downloads\\chromedriver_win32.exe");
+			WebDriverManager.chromedriver().setup();
+			WebDriver driver = new ChromeDriver();
 	@Test
 	(priority=2)
 	public void search() throws InterruptedException

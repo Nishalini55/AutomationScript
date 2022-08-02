@@ -5,12 +5,20 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 
-public class contactUs_page extends Launch
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class contactUs extends Launch
 {
 	@Test(priority = 4)
 	public void contactUs() throws Throwtable
+	//System.setProperty("webdriver.chrome.driver",".C:\\Users\\nishalini.mathavan\\Downloads\\chromedriver_win32.exe");
+			WebDriverManager.chromedriver().setup();
+			WebDriver driver = new ChromeDriver();
 }
 {
 	driver.finfElement(By.xpath("//a[@id='navbarDropdown']")).click();
@@ -50,4 +58,4 @@ public class contactUs_page extends Launch
 	
 	
 
-}
+
