@@ -23,9 +23,9 @@ public void SignUp_for_Mobile() throws InterruptedException
 	driver.get("https://mobileworld.azurewebsites.net/");
 	driver.manage().window().maximize();
 			
-    WebElement Signin = driver.findElement(By.xpath("//button[text()='SIGN IN']"));
+    WebElement Signin = driver.findElement(By.xpath("//button[.='SIGN IN']"));
 	Signin.click();
-	WebElement Signup = driver.findElement(By.xpath("//a[text()='Sign up']"));
+	WebElement Signup = driver.findElement(By.xpath("//a[.='Sign up']"));
 	Signup.click();
 	WebElement firstname = driver.findElement(By.xpath("//input[@placeholder='First Name']"));
 	firstname.sendKeys("nisha");

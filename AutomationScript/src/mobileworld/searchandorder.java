@@ -4,11 +4,19 @@ import java.util.Iterator;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class searchandorder {
 	public class Search extends Launch
+	WebDriverManager.chromedriver().setup();
+	WebDriver driver = new ChromeDriver();
 	@Test
 	(priority=2)
 	public void search() throws InterruptedException
@@ -39,15 +47,18 @@ public class searchandorder {
 		driver.findElement(By.xpath("flexRadioDefault2")).click();
 		driver.findElement(By.xpath("//*[@placeholder='0000000000000']")).sendKeys("123456");
 		driver.findElement(By.id("address1")).sendKeys("abcdef ghij kljhg jhun");
-		driver.findElement(By.id("address"2)).sendKeys("abcd cvgb nkjh hnj nmjhg");
-		driver.findElement(By.id("inputCity")).sendKeys("Madurai"));
+		driver.findElement(By.id("address2")).sendKeys("abcd cvgb nkjh hnj nmjhg");
+		driver.findElement(By.id("inputCity")).sendKeys("Madurai");
 		WebElement dropdown = driver.findElement(By.id("inputState"));
 		Select sle= new Select(dropdown);sle.selectByVisibleText("TamilNadu");
 		driver.findElement(By.id("inputzip")).sendKeys("600030");
 		driver.findElement(By.xpath("//*[.='Apple]")).click();
 		driver.findElement(By.cssSelector("input[placeholder='no of mobiles']")).sendKeys("3");
 		WebElement dpdwn2 = driver.findElement(By.id("bought"));
-		Select sle2= new Select(dpdwn2);sle2.selectByVlue("0");
+		Select sle2= new Select(dpdwn2);sle2.selectByValue("0");
+		driver.findElement(By.xpath("//*[@id='gridCheck1']"));
+		driver.findElement(By.xpath("//*[@id='gridCheck1''])[2]")).click();
+		driver.findElement(By.xpath("//button[@class='btn btn-primary']")).click();
 		
 				
 			
