@@ -2,20 +2,29 @@ package mobileworld;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import com.github.dockerjava.api.model.Driver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class loginandsignup {
 @Test
-(dependsOnMethods= {"Launching _the_browser}")
+(dependsOnMethods= {"Launching _the_browser"})
 public void SignUp_for_Mobile() throws InterruptedException
 {
+	WebDriverManager.chromedriver().setup();
+	WebDriver driver = new ChromeDriver();
 	WebElement Signin = driver.findElement(By.xpath("/button[text()='SIGN IN']"));
 	Signin.click();
-	WebElement Signin = driver.findElement(By.xpath("a[text()='Sign up']"));
+	WebElement Signup = driver.findElement(By.xpath("a[text()='Sign up']"));
 	Signup.click();
 	WebElement firstname = driver.findElement(By.xpath("//input[@id()='myName']"));
 	firstname.sendKeys("nisha");
-	WebElement Lat_name = driver.findElement(By.xpath("//input[@placeholder='LastName']"));
+	WebElement Last_name = driver.findElement(By.xpath("//input[@placeholder='LastName']"));
 	Last_name.sendKeys("mathavan");
 	WebElement Email = driver.findElement(By.xpath("//input[@type='Email']"));
 	Email.sendKeys("nisha@gmail.com");
@@ -24,6 +33,9 @@ public void SignUp_for_Mobile() throws InterruptedException
 	WebElement Phone_number = driver.findElement(By.xpath("//input[@type='Password"));
 	Phone_number.sendKeys("9789454701");
 	driver.findElement(By.xpath("//input[@type= 'radio']")).click();
+	WebElement bio_story = driver.findElement(By.xpath("//textarea[@placeholder='Short Bio']"));
+	bio_story.sendKeys("Nisha is the employee who join the qualitest company in the last 2 month back ");
+	driver.findElement(By.xpath("//input[@type='date']")).click();
 	driver.findElement(By.xpath("//button[@type='date']")).click();
 	Alert Al = driver.switchTo().alert();Al.accept();
 	Thread.sleep(2000);
@@ -34,12 +46,7 @@ public void SignUp_for_Mobile() throws InterruptedException
 	Password.click();
 	Password.sendKeys("Nisha@1999");
 	driver.findElement(By.xpath("//a[text()='Log In'])")).click();
-	
-	
-	
-	
-	
 }
 }
 
-}
+
