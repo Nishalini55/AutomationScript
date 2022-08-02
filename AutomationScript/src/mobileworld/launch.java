@@ -10,7 +10,7 @@ public class launch {
 		driver.manage().window().maximize();
 				
 	}
-}}
+}
 
 }
 
