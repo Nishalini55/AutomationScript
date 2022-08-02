@@ -2,34 +2,34 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-02T18:03:03 IST" name="Default suite" finished-at="2022-08-02T18:03:07 IST" duration-ms="3566">
+  <suite started-at="2022-08-02T18:17:54 IST" name="Default suite" finished-at="2022-08-02T18:17:58 IST" duration-ms="3924">
     <groups>
     </groups>
-    <test started-at="2022-08-02T18:03:03 IST" name="Default test" finished-at="2022-08-02T18:03:07 IST" duration-ms="3566">
+    <test started-at="2022-08-02T18:17:54 IST" name="Default test" finished-at="2022-08-02T18:17:58 IST" duration-ms="3924">
       <class name="mobileworld.loginandsignup$Login">
-        <test-method signature="SignUp_for_Mobile()[pri:0, instance:mobileworld.loginandsignup$Login@2f7298b]" started-at="2022-08-02T18:03:03 IST" name="SignUp_for_Mobile" finished-at="2022-08-02T18:03:07 IST" duration-ms="3531" status="FAIL">
+        <test-method signature="SignUp_for_Mobile()[pri:0, instance:mobileworld.loginandsignup$Login@2f7298b]" started-at="2022-08-02T18:17:54 IST" name="SignUp_for_Mobile" finished-at="2022-08-02T18:17:58 IST" duration-ms="3887" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"a[text()='Sign up']"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='LastName']"}
   (Session info: chrome=103.0.5060.134)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'QT-INBG-LT0709', ip: '10.20.29.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f4c9ea21ee951cda25025a4f642df5ff, findElement {using=xpath, value=a[text()='Sign up']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\NISHAL~1.MAT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57145}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57145/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f4c9ea21ee951cda25025a4f642df5ff]]>
+Command: [ee70b404cca965a86c26152de225b7b1, findElement {using=xpath, value=//input[@placeholder='LastName']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\NISHAL~1.MAT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57533}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57533/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ee70b404cca965a86c26152de225b7b1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"a[text()='Sign up']"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='LastName']"}
   (Session info: chrome=103.0.5060.134)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'QT-INBG-LT0709', ip: '10.20.29.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f4c9ea21ee951cda25025a4f642df5ff, findElement {using=xpath, value=a[text()='Sign up']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\NISHAL~1.MAT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57145}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57145/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f4c9ea21ee951cda25025a4f642df5ff
+Command: [ee70b404cca965a86c26152de225b7b1, findElement {using=xpath, value=//input[@placeholder='LastName']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\NISHAL~1.MAT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57533}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57533/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ee70b404cca965a86c26152de225b7b1
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -44,7 +44,7 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-at mobileworld.loginandsignup$Login.SignUp_for_Mobile(loginandsignup.java:28)
+at mobileworld.loginandsignup$Login.SignUp_for_Mobile(loginandsignup.java:32)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)

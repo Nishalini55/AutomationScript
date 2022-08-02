@@ -25,9 +25,9 @@ public void SignUp_for_Mobile() throws InterruptedException
 			
     WebElement Signin = driver.findElement(By.xpath("//button[text()='SIGN IN']"));
 	Signin.click();
-	WebElement Signup = driver.findElement(By.xpath("a[text()='Sign up']"));
+	WebElement Signup = driver.findElement(By.xpath("//a[text()='Sign up']"));
 	Signup.click();
-	WebElement firstname = driver.findElement(By.xpath("//input[@id()='myName']"));
+	WebElement firstname = driver.findElement(By.xpath("//input[@placeholder='First Name']"));
 	firstname.sendKeys("nisha");
 	WebElement Last_name = driver.findElement(By.xpath("//input[@placeholder='LastName']"));
 	Last_name.sendKeys("mathavan");
