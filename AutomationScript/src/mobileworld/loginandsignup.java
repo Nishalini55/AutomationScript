@@ -1,5 +1,6 @@
 package mobileworld;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -24,7 +25,16 @@ public void SignUp_for_Mobile() throws InterruptedException
 	Phone_number.sendKeys("9789454701");
 	driver.findElement(By.xpath("//input[@type= 'radio']")).click();
 	driver.findElement(By.xpath("//button[@type='date']")).click();
-	Alert Al = driver.switchTo()
+	Alert Al = driver.switchTo().alert();Al.accept();
+	Thread.sleep(2000);
+	WebElement user_name = driver.findElement(By.id("username"));
+	user_name.click();
+	user_name.sendKeys("nisha@gmail.com");
+	WebElement Password = driver.findElement(By.xpath("//input[@id='password']"));
+	Password.click();
+	Password.sendKeys("Nisha@1999");
+	driver.findElement(By.xpath("//a[text()='Log In'])")).click();
+	
 	
 	
 	
